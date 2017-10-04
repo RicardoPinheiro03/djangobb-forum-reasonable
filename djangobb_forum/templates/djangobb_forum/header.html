@@ -27,18 +27,18 @@
 			<a href="{% url 'djangobb:index' %}"><img src="{% static "landingpage/img/logo-contra.svg" %}" class="img-responsive center-block" id="logocontra" align="center"/></a>
 		</div>
 		<div id="brdmenu" class="inbox">
-			<ul>
+			<ul style="font-family:'PT Mono', cursive;">
 			{% block menu %}
-				<li id="navindex"><a href="{% url 'djangobb:index' %}">{% trans "Index" %}</a></li>
-				<li id="navsearch"><a href="{% url 'djangobb:search' %}">{% trans "Procura" %}</a></li>
+				<li id="navindex" style="font-family:'PT Mono', cursive;"><a href="{% url 'djangobb:index' %}">{% trans "Index" %}</a></li>
+				<li id="navsearch" style="font-family:'PT Mono', cursive;"><a href="{% url 'djangobb:search' %}">{% trans "Procura" %}</a></li>
 				{% if user.is_superuser %}
-					<li id="navadmin"><a href="{% url 'admin:index' %}">{% trans "Administração" %}</a></li>
+					<li id="navadmin" style="font-family:'PT Mono', cursive;"><a href="{% url 'admin:index' %}">{% trans "Administração" %}</a></li>
 				{% endif %}
 				{% if user.is_authenticated %}
-					<li id="navprofile"><a href="{% url 'kernel:info' %}">{% trans "Editar Perfil" %}</a></li>
+					<li id="navprofile" style="font-family:'PT Mono', cursive;"><a href="{% url 'kernel:info' %}">{% trans "Editar Perfil" %}</a></li>
 				{% endif %}
 			{% endblock %}
-			</ul>
+			</ul style="font-family:'PT Mono', cursive;">
 		</div>
 		<div id="brdwelcome" class="inbox">
 			<ul class="conl">
