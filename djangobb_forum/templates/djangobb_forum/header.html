@@ -23,10 +23,7 @@
 <div id="djangobbindex" class="djangobb">
 <div id="brdheader" class="block">
 	<div class="box">
-		<div id="brdtitle" class="inbox">
-			<a href="{% url 'djangobb:index' %}"><img src="{% static "landingpage/img/logo-contra.svg" %}" class="img-responsive center-block" id="logocontra" align="center"/></a>
-		</div>
-		<div id="brdmenu" class="inbox">
+		<div id="brdmenu" class="inbox" style="background: grey;">
 			<ul style="font-family:'PT Mono', cursive;">
 			{% block menu %}
 				<li id="navindex" style="font-family:'PT Mono', cursive;"><a href="{% url 'djangobb:index' %}">{% trans "Index" %}</a></li>
